@@ -1,5 +1,8 @@
-# PerfusionCT-Net
-A UNet for the analysis of perfusion CT imaging in the setting of acute ischemic stroke. 
+# Bayesian Skip Net
+
+Perfusion CT is widely used in acute ischemic stroke to determine eligibility for acute treatment, by defining an ischemic core and penumbra. In this work presented at the Brain Lesion Workshop at MICCAI 2020, we used a novel way of building on prior information for the automatic prediction and segmentation of stroke lesions. We reformulate the task to identify differences from a prior segmentation by extending a three-dimensional Attention Gated Unet with a skip connection allowing only an unchanged prior to bypass most of the network. We show that this technique improves results obtained by a baseline Attention Gated Unet on both the Geneva Stroke Dataset and the ISLES 2018 dataset.
+
+[![Bayesian Skip Net Presentation](https://img.youtube.com/vi/PbyxpUMV8-w/0.jpg)](https://www.youtube.com/watch?v=PbyxpUMV8-w)
 
 
 ## Installation
@@ -12,15 +15,13 @@ A UNet for the analysis of perfusion CT imaging in the setting of acute ischemic
 ## Getting started
 
 - The main file for training can be found under `train_segmentation.py`. It takes a config file as argument, examples can be found in the `./config`folder. 
-- A visdom server can launched as well for visualisation: `python -m visdom.server`
+- A visdom server can be launched as well for visualisation: `python -m visdom.server`
 
 ## References
 
-- This is a fork of [*ozan-oktay/Attention-Gated-Networks*](https://github.com/ozan-oktay/Attention-Gated-Networks)
 - "Attention U-Net: Learning Where to Look for the Pancreas", MIDL'18, Amsterdam, [original paper](https://openreview.net/pdf?id=Skft7cijM) <br />
 - Clinical implications: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2762679
 
-## Possibilites for further enhancement
+## This is a stale repo
 
-- Downscaling to a 2.5 dimensional unet (eg. https://github.com/xyzacademic/multipathbmp), "A multi-path 2.5 dimensional convolutional neural network system for segmenting stroke lesions in brain MRI images", Xue et al, [paper](https://www.sciencedirect.com/science/article/pii/S2213158219304656)
-- Multi-scale attention network: https://github.com/sinAshish/Multi-Scale-Attention
+- Active development repo: https://github.com/JulianKlug/PerfusionCT-Net
