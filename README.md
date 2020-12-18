@@ -8,6 +8,10 @@ Click on the image below:
 
 [![Bayesian Skip Net Presentation](https://img.youtube.com/vi/PbyxpUMV8-w/0.jpg)](https://www.youtube.com/watch?v=PbyxpUMV8-w)
 
+## Model Architecture
+
+![Bayesian Skip Net Architecture](/static/figures/bayesian_skip_net/bayesian_skip_net.svg)
+
 ## Installation
 `pip install -r requirements.txt`
 
